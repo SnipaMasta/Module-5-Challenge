@@ -5,19 +5,33 @@
 var localeSettings = {};
 dayjs.locale(localeSettings);
 //I think this delays execution of code until DOM loads
+
 $(function () {
+  var currentHour = dayjs().format('H');
+
+  function hourlyColor() {
+    $('.time-block').each(function () {
+      var blockHour = parseInt(this.id);
+      $(this).toggleClass('past', blockHour < currentHour);
+      $(this).toggleClass('present', blockHour === currentHour);
+      $(this).toggleClass('future', blockHour > currentHour);
+    });
+  }
+
+
 
   var currentTime = dayjs();
-$("#time").text(currentTime.format("hh:mm:ss"));
+  $("#time").text(currentTime.format("hh:mm:ss"));
 
-var date = dayjs();
-$("#date").text(date.format("D MM, YYYY"));
+  var date = dayjs();
+  $("#date").text(date.format("D MM, YYYY"));
 
-setInterval(function(){let date = dayjs();
+  setInterval(function () {
+    let date = dayjs();
     $('#date').text(date.format('MM/d/YYYY'))
     let currentTime = dayjs();
     $('#time').text(currentTime.format('hh: mm: ss'))
-    }, 1000);
+  }, 1000);
   // TODO: Add a listener for click events on the save button. This code should
   // use the id in the containing time-block as a key to save the user input in
   // local storage. HINT: What does `this` reference in the click listener
