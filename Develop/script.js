@@ -22,11 +22,21 @@ $(function () {
 function textEntry() {
   $('.saveBtn').on('click', function() {
     var key = $(this).parent().attr('id');
-    var valur = $(this).siblings('.description').val();
+    var value = $(this).siblings('.description').val();
     localStorage.setItem(key,value);
   });
 }
 
+function refreshColor() {
+  $('.time-block').each(function() {
+    var blockHour = parseInt(this.id);
+    if (blockHour === currentHour) {
+      $(this).removeClass('past future').addClass('present');
+    } else if (blockHour < currentHour) {
+      $(this).removeClass('past present').addClass('future');
+    }
+  })
+}
 
   var currentTime = dayjs();
   $("#time").text(currentTime.format("hh:mm:ss"));
