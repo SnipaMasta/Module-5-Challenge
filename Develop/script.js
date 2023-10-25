@@ -17,7 +17,15 @@ $(function () {
       $(this).toggleClass('future', blockHour > currentHour);
     });
   }
+  
 
+function textEntry() {
+  $('.saveBtn').on('click', function() {
+    var key = $(this).parent().attr('id');
+    var valur = $(this).siblings('.description').val();
+    localStorage.setItem(key,value);
+  });
+}
 
 
   var currentTime = dayjs();
@@ -32,6 +40,9 @@ $(function () {
     let currentTime = dayjs();
     $('#time').text(currentTime.format('hh: mm: ss'))
   }, 1000);
+
+  textEntry();
+  hourlyColor();
   // TODO: Add a listener for click events on the save button. This code should
   // use the id in the containing time-block as a key to save the user input in
   // local storage. HINT: What does `this` reference in the click listener
