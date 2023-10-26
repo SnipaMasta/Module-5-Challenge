@@ -16,7 +16,7 @@ No installation required! Simply click the link to check out and use the workday
 
 HUGE THANKS to:
 
-Jeremy Doran - https://github.com/mighty-little-coder
+Jeremy Doran - https://github.com/mighty-little-coder &
 Nicole Choiniere-Kroeker - https://github.com/nchoin
 
 ## License
