@@ -40,5 +40,11 @@ var hourX = dayjs().format('H');
 //jqueryui.com
 
 if (hourX > 9) {
-  $('#hour-9').addClass('past)')
-}
+  $('#hour-9').addClass('past')
+} else if (hourX == 9) {
+  $('#hour-9').addClass('present')
+ } else {
+  $('#hour-9').addClass('future')
+  }
+
+
