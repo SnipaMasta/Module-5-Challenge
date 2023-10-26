@@ -46,34 +46,25 @@ h2{
 }
 
 .past {
-  /* background-color: #d3d3d3; */
-  background-color: rgb(198, 9, 9,);
+  background-color: rgb(230, 1, 1);
   color: white;
 }
 
 .present {
-  /* background-color: #ff6961; */
   background-color: rgb(20, 163, 245);
   color: rgb(0, 0, 0);
 }
 
 .future {
-  /* background-color: #77dd77; */
-  background-color: lemonchiffon;
+  background-color: rgba(0, 194, 61, 0.655);
   color: black;
-}
-
-.neither {
-  background-color: rgb(144, 144, 144);
-  text-color: white;
 }
 
 .saveBtn {
   border-left: 1px solid black;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
-  /* background-color: #06aed5; */
-  background-color: rgba(103, 103, 103 0.44);
+  background-color: #06afd5af;
   color: cornsilk;
   /* color: white; */
 }
@@ -84,3 +75,6 @@ h2{
   color: pink;
 }
 
+#clearBtn {
+
+}

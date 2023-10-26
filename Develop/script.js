@@ -21,36 +21,37 @@ $(function () {
 });
 
 //variable for the current hour, which is used to change the color of the blocks with appropriate if statements
-var hourX = dayjs().format('H');
 
-if (hourX < 9) {
-  $('#hour-9').addClass('neither')
-}
-if (hourX < 10) {
-  $('#hour-10').addClass('neither')
-}
-if (hourX < 11) {
-  $('#hour-11').addClass('neither')
-}
-if (hourX < 12) {
-  $('#hour-12').addClass('neither')
-}
-if (hourX < 13) {
-  $('#hour-13').addClass('neither')
-}
-if (hourX < 14) {
-  $('#hour-14').addClass('neither')
-}
-if (hourX < 15) {
-  $('#hour-15').addClass('neither')
-}
-if (hourX < 16) {
-  $('#hour-16').addClass('neither')
-}
-if (hourX < 17) {
-  $('#hour-17').addClass('neither')
-}
 
+// if (hourX < 9) {
+//   $('#hour-9').addClass('neither')
+// }
+// if (hourX < 10) {
+//   $('#hour-10').addClass('neither')
+// }
+// if (hourX < 11) {
+//   $('#hour-11').addClass('neither')
+// }
+// if (hourX < 12) {
+//   $('#hour-12').addClass('neither')
+// }
+// if (hourX < 13) {
+//   $('#hour-13').addClass('neither')
+// }
+// if (hourX < 14) {
+//   $('#hour-14').addClass('neither')
+// }
+// if (hourX < 15) {
+//   $('#hour-15').addClass('neither')
+// }
+// if (hourX < 16) {
+//   $('#hour-16').addClass('neither')
+// }
+// if (hourX < 17) {
+//   $('#hour-17').addClass('neither')
+// }
+
+var hourX = 12;
 
 
 if (hourX > 9) {
@@ -71,10 +72,13 @@ if (hourX > 10) {
 
 if (hourX > 11) {
   $('#hour-11').addClass('past')
+  console.log("past 11");
 } else if (hourX == 11) {
   $('#hour-11').addClass('present')
+  console.log("its 11");
 } else {
   $('#hour-11').addClass('future')
+  console.log("not 11 yet");
 }
 
 if (hourX > 12) {
@@ -87,10 +91,14 @@ if (hourX > 12) {
 
 if (hourX > 13) {
   $('#hour-13').addClass('past')
+  console.log("past 1");
 } else if (hourX == 13) {
   $('#hour-13').addClass('present')
+  console.log("its 1");
 } else {
   $('#hour-13').addClass('future')
+  console.log("not 1 yet");
+
 }
 
 if (hourX > 14) {
@@ -198,3 +206,11 @@ document.getElementById('hourFiveBtn').addEventListener('click', function() {
 var storedEvent = localStorage.getItem('17');
 var eventInput = document.getElementById('hourFiveEvent');
 eventInput.value = storedEvent;
+
+//clear btn
+document.getElementById("clearBtn").addEventListener("click",clearPage)
+
+function clearPage() {
+  localStorage.clear();
+  location.reload();
+}
