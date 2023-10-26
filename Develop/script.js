@@ -3,11 +3,17 @@
 // in the html.
 $(function () {
 
-  var date = dayjs().format('dddd, MMMM d, YYYY');
-  document.getElementById('currentDay').textContent = date;
-  var hourOfDay = dayjs().format('H');
-  document.getElementById('currentHour').textContent = hourOfDay
+  var currentTime = dayjs();
+$("#time").text(currentTime.format("hh:mm:ss"));
 
+var date = dayjs();
+$("#date").text(date.format("D MM, YYYY"));
+
+setInterval(function(){let date = dayjs();
+    $('#date').text(date.format('MM/d/YYYY'))
+    let currentTime = dayjs();
+    $('#time').text(currentTime.format('hh: mm: ss'))
+    }, 1000);
   // TODO: Add a listener for click events on the save button. This code should
   // use the id in the containing time-block as a key to save the user input in
   // local storage. HINT: What does `this` reference in the click listener
@@ -28,8 +34,11 @@ $(function () {
   // TODO: Add code to display the current date in the header of the page.
 });
 
-
+var hourX = dayjs().format('H');
 //dayjs.org
 //getbootstrap.com
 //jqueryui.com
 
+if (hourX > 9) {
+  $('#hour-9').addClass('past)')
+}
