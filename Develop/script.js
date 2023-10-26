@@ -125,3 +125,12 @@ if (hourX > 17) {
   $('#hour-17').addClass('none')
 }
 
+//local storage stuff
+
+var hourNineEvents = document.getElementById('hourNineEvent');
+document.getElementById('hourNineBtn').addEventListener('click', function() {
+  window.localStorage.setItem('9', hourNineEvents.value)
+});
+var storedEvent = localStorage.getItem('9');
+var eventInput = document.getElementById('hourNineEvent');
+eventInput.value = storedEvent;

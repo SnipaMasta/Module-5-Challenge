@@ -47,7 +47,7 @@ h2{
 
 .past {
   /* background-color: #d3d3d3; */
-  background-color: rgb(135, 135, 135);
+  background-color: rgb(198, 9, 9,);
   color: white;
 }
 
@@ -73,7 +73,7 @@ h2{
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
   /* background-color: #06aed5; */
-  background-color: rgba(0, 0, 0, 0.444);
+  background-color: rgba(103, 103, 103 0.44);
   color: cornsilk;
   /* color: white; */
 }
