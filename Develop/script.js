@@ -44,8 +44,7 @@ $(function () {
 //   $('#hour-17').addClass('neither')
 // }
 
-var hourX = dayjs().format("H");
-var currentTime = $('time')
+var hourX = dayjs().format('H');
 
 if (hourX > 9) {
   $('#hour-9').addClass('past')
@@ -65,10 +64,8 @@ if (hourX > 10) {
 
 if (hourX > 11) {
   $('#hour-11').addClass('past')
-  console.log("past 11");
 } else if (hourX == 11) {
   $('#hour-11').addClass('present')
-  console.log("its 11");
 } else {
   $('#hour-11').addClass('future')
   console.log("not 11 yet");
@@ -77,9 +74,9 @@ if (hourX > 11) {
 if (hourX > 12) {
   $('#hour-12').addClass('past')
 } else if (hourX == 12) {
-  $('#hour-13').addClass('present')
+  $('#hour-12').addClass('present')
 } else {
-  $('#hour-13').addClass('future')
+  $('#hour-12').addClass('future')
 }
 
 if (hourX > 13) {
@@ -114,6 +111,7 @@ if (hourX > 16) {
   $('#hour-16').addClass('past')
 } else if (hourX == 16) {
   $('#hour-16').addClass('present')
+  console.log("its 4");
 } else {
   $('#hour-16').addClass('future')
 }
@@ -123,7 +121,7 @@ if (hourX > 17) {
 } else if (hourX == 17) {
   $('#hour-17').addClass('present')
 } else {
-  $('#hour-17').addClass('none')
+  $('#hour-17').addClass('future')
 }
 
 //local storage stuff, 7 lines of code for each hour block
