@@ -125,12 +125,76 @@ if (hourX > 17) {
   $('#hour-17').addClass('none')
 }
 
-//local storage stuff
-
+//local storage stuff, 7 lines of code for each hour block
+//hour 9
 var hourNineEvents = document.getElementById('hourNineEvent');
 document.getElementById('hourNineBtn').addEventListener('click', function() {
   window.localStorage.setItem('9', hourNineEvents.value)
 });
 var storedEvent = localStorage.getItem('9');
 var eventInput = document.getElementById('hourNineEvent');
+eventInput.value = storedEvent;
+//hour 10
+var hourTenEvents = document.getElementById('hourTenEvent');
+document.getElementById('hourTenBtn').addEventListener('click', function() {
+  window.localStorage.setItem('10', hourTenEvents.value)
+});
+var storedEvent = localStorage.getItem('10');
+var eventInput = document.getElementById('hourTenEvent');
+eventInput.value = storedEvent;
+//hour 11
+var hourElevenEvents = document.getElementById('hourElevenEvent');
+document.getElementById('hourElevenBtn').addEventListener('click', function() {
+  window.localStorage.setItem('11', hourElevenEvents.value)
+});
+var storedEvent = localStorage.getItem('11');
+var eventInput = document.getElementById('hourElevenEvent');
+eventInput.value = storedEvent;
+//hour 12
+var hourTwelveEvents = document.getElementById('hourTwelveEvent');
+document.getElementById('hourTwelveBtn').addEventListener('click', function() {
+  window.localStorage.setItem('9', hourTwelveEvents.value)
+});
+var storedEvent = localStorage.getItem('12');
+var eventInput = document.getElementById('hourTwelveEvent');
+eventInput.value = storedEvent;
+//hour 13
+var hourOneEvents = document.getElementById('hourOneEvent');
+document.getElementById('hourOneBtn').addEventListener('click', function() {
+  window.localStorage.setItem('13', hourOneEvents.value)
+});
+var storedEvent = localStorage.getItem('13');
+var eventInput = document.getElementById('hourOneEvent');
+eventInput.value = storedEvent;
+//hour 14
+var hourTwoEvents = document.getElementById('hourTwoEvent');
+document.getElementById('hourTwoBtn').addEventListener('click', function() {
+  window.localStorage.setItem('14', hourTwoEvents.value)
+});
+var storedEvent = localStorage.getItem('14');
+var eventInput = document.getElementById('hourTwoEvent');
+eventInput.value = storedEvent;
+//hour 15
+var hourThreeEvents = document.getElementById('hourThreeEvent');
+document.getElementById('hourThreeBtn').addEventListener('click', function() {
+  window.localStorage.setItem('15', hourThreeEvents.value)
+});
+var storedEvent = localStorage.getItem('15');
+var eventInput = document.getElementById('hourThreeEvent');
+eventInput.value = storedEvent;
+//hour 16
+var hourFourEvents = document.getElementById('hourFourEvent');
+document.getElementById('hourFourBtn').addEventListener('click', function() {
+  window.localStorage.setItem('16', hourFourEvents.value)
+});
+var storedEvent = localStorage.getItem('16');
+var eventInput = document.getElementById('hourFourEvent');
+eventInput.value = storedEvent;
+//hour 17
+var hourFiveEvents = document.getElementById('hourFiveEvent');
+document.getElementById('hourFiveBtn').addEventListener('click', function() {
+  window.localStorage.setItem('17', hourFiveEvents.value)
+});
+var storedEvent = localStorage.getItem('17');
+var eventInput = document.getElementById('hourFiveEvent');
 eventInput.value = storedEvent;

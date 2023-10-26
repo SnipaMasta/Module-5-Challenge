@@ -2,7 +2,7 @@ body {
   font-family: 'Open Sans', sans-serif;
 
   font-size: 16px;
-  background-color: rgba(148, 149, 149, 0.676)
+  background-color: rgba(236, 248, 186, 0.332)
 }
 
 textarea {
@@ -37,7 +37,7 @@ h2{
 }
 
 .hour {
-  background-color: #ffffff;
+  background-color: #e7e7e7;
   color: #000000;
   border-top: 1px dashed #000000;
   text-align: center;
@@ -64,7 +64,7 @@ h2{
 }
 
 .neither {
-  background-color: rgb(103, 103, 103);
+  background-color: rgb(144, 144, 144);
   text-color: white;
 }
 
@@ -84,6 +84,3 @@ h2{
   color: pink;
 }
 
-#currentHour {
-  visibility: hidden;
-}
