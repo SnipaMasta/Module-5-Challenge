@@ -4,16 +4,17 @@
 $(function () {
 
   var currentTime = dayjs();
-$("#time").text(currentTime.format("hh:mm:ss"));
+  $("#time").text(currentTime.format("hh:mm:ss"));
 
-var date = dayjs();
-$("#date").text(date.format("D MM, YYYY"));
+  var date = dayjs();
+  $("#date").text(date.format("D MM, YYYY"));
 
-setInterval(function(){let date = dayjs();
+  setInterval(function () {
+    let date = dayjs();
     $('#date').text(date.format('MM/d/YYYY'))
     let currentTime = dayjs();
     $('#time').text(currentTime.format('hh: mm: ss'))
-    }, 1000);
+  }, 1000);
   // TODO: Add a listener for click events on the save button. This code should
   // use the id in the containing time-block as a key to save the user input in
   // local storage. HINT: What does `this` reference in the click listener
@@ -43,8 +44,70 @@ if (hourX > 9) {
   $('#hour-9').addClass('past')
 } else if (hourX == 9) {
   $('#hour-9').addClass('present')
- } else {
+} else {
   $('#hour-9').addClass('future')
-  }
+}
 
+if (hourX > 10) {
+  $('#hour-10').addClass('past')
+} else if (hourX == 10) {
+  $('#hour-10').addClass('present')
+} else {
+  $('#hour-10').addClass('future')
+}
 
+if (hourX > 11) {
+  $('#hour-11').addClass('past')
+} else if (hourX == 11) {
+  $('#hour-11').addClass('present')
+} else {
+  $('#hour-11').addClass('future')
+}
+
+if (hourX > 12) {
+  $('#hour-12').addClass('past')
+} else if (hourX == 12) {
+  $('#hour-13').addClass('present')
+} else {
+  $('#hour-13').addClass('future')
+}
+
+if (hourX > 13) {
+  $('#hour-13').addClass('past')
+} else if (hourX == 13) {
+  $('#hour-13').addClass('present')
+} else {
+  $('#hour-13').addClass('future')
+}
+
+if (hourX > 14) {
+  $('#hour-14').addClass('past')
+} else if (hourX == 14) {
+  $('#hour-14').addClass('present')
+} else {
+  $('#hour-14').addClass('future')
+}
+
+if (hourX > 15) {
+  $('#hour-15').addClass('past')
+} else if (hourX == 15) {
+  $('#hour-15').addClass('present')
+} else {
+  $('#hour-15').addClass('future')
+}
+
+if (hourX > 16) {
+  $('#hour-16').addClass('past')
+} else if (hourX == 16) {
+  $('#hour-16').addClass('present')
+} else {
+  $('#hour-16').addClass('future')
+}
+
+if (hourX > 17) {
+  $('#hour-17').addClass('past')
+} else if (hourX == 17) {
+  $('#hour-17').addClass('present')
+} else {
+  $('#hour-17').addClass('future')
+}
