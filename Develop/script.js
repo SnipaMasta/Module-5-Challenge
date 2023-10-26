@@ -52,7 +52,7 @@ $(function () {
 // }
 
 var hourX = 12;
-
+var currentTime = $('time')
 
 if (hourX > 9) {
   $('#hour-9').addClass('past')
