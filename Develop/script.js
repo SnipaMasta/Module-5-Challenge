@@ -153,7 +153,7 @@ eventInput.value = storedEvent;
 //hour 12
 var hourTwelveEvents = document.getElementById('hourTwelveEvent');
 document.getElementById('hourTwelveBtn').addEventListener('click', function() {
-  window.localStorage.setItem('9', hourTwelveEvents.value)
+  window.localStorage.setItem('12', hourTwelveEvents.value)
 });
 var storedEvent = localStorage.getItem('12');
 var eventInput = document.getElementById('hourTwelveEvent');
