@@ -40,6 +40,36 @@ var hourX = dayjs().format('H');
 //getbootstrap.com
 //jqueryui.com
 
+if (hourX < 9) {
+  $('#hour-9').addClass('neither')
+}
+if (hourX < 10) {
+  $('#hour-10').addClass('neither')
+}
+if (hourX < 11) {
+  $('#hour-11').addClass('neither')
+}
+if (hourX < 12) {
+  $('#hour-12').addClass('neither')
+}
+if (hourX < 13) {
+  $('#hour-13').addClass('neither')
+}
+if (hourX < 14) {
+  $('#hour-14').addClass('neither')
+}
+if (hourX < 15) {
+  $('#hour-15').addClass('neither')
+}
+if (hourX < 16) {
+  $('#hour-16').addClass('neither')
+}
+if (hourX < 17) {
+  $('#hour-17').addClass('neither')
+}
+
+
+
 if (hourX > 9) {
   $('#hour-9').addClass('past')
 } else if (hourX == 9) {
@@ -109,5 +139,6 @@ if (hourX > 17) {
 } else if (hourX == 17) {
   $('#hour-17').addClass('present')
 } else {
-  $('#hour-17').addClass('future')
+  $('#hour-17').addClass('none')
 }
+

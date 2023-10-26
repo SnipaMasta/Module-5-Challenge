@@ -54,13 +54,18 @@ h2{
 .present {
   /* background-color: #ff6961; */
   background-color: rgb(20, 163, 245);
-  color: white;
+  color: rgb(0, 0, 0);
 }
 
 .future {
   /* background-color: #77dd77; */
   background-color: lemonchiffon;
   color: black;
+}
+
+.neither {
+  background-color: rgb(103, 103, 103);
+  text-color: white;
 }
 
 .saveBtn {
